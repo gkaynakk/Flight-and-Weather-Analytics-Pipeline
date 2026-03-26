@@ -1,0 +1,12 @@
+dbt_projects:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: zoomcampcapstoneproject
+      dataset: flight_data
+      threads: 4
+     
+      location: EU
+      priority: interactive

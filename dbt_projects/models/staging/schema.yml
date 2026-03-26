@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: stg_flights
+    description: Cleaned staging model for flight data
+    columns:
+      - name: flight_date
+        tests:
+          - not_null
+
+      - name: origin_airport
+        tests:
+          - not_null
+
+      - name: destination_airport
+        tests:
+          - not_null
+
+  - name: fact_flights
+    description: Aggregated fact table for flight performance analysis
+    columns:
+      - name: flight_date
+        tests:
+          - not_null
+
+      - name: total_flights
+        tests:
+          - not_null

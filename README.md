@@ -49,3 +49,5 @@ The project follows a modern data engineering architecture:
 ```text
 Data Source → Python Ingestion → Parquet → BigQuery → dbt → Dashboard
    
+
+

@@ -1,0 +1,750 @@
+[0m07:42:53.447178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70a7ff0fc830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70a7fe728fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70a7fe5e9010>]}
+
+
+============================== 07:42:53.452515 | 248a5f93-a447-4d2a-9321-4a668b22a1bc ==============================
+[0m07:42:53.452515 [info ] [MainThread]: Running with dbt=1.11.7
+[0m07:42:53.453524 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'introspect': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'static_parser': 'True', 'warn_error': 'None', 'target_path': 'None', 'version_check': 'True', 'log_format': 'default', 'write_json': 'True', 'log_path': 'logs', 'debug': 'False', 'use_experimental_parser': 'False', 'profiles_dir': '/workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects', 'partial_parse': 'True', 'empty': 'False', 'fail_fast': 'False', 'log_cache_events': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'printer_width': '80', 'send_anonymous_usage_stats': 'True'}
+[0m07:42:53.454522 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt_project.yml does not parse to a dictionary
+[0m07:42:53.455921 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.013969489, "process_in_blocks": "0", "process_kernel_time": 0.235259, "process_mem_max_rss": "116612", "process_out_blocks": "16", "process_user_time": 2.563928}
+[0m07:42:53.456769 [debug] [MainThread]: Command `dbt run` failed at 07:42:53.456620 after 0.01 seconds
+[0m07:42:53.457473 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70a7fe5e98b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70a7fe5eb470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70a7fe5eb560>]}
+[0m07:42:53.458219 [debug] [MainThread]: Flushing usage events
+[0m07:42:54.398043 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:45:14.325989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78894018d0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x788940540080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78894018cef0>]}
+
+
+============================== 07:45:14.336451 | b975b9ec-6529-4aad-a6a6-4ab2fbdf83d1 ==============================
+[0m07:45:14.336451 [info ] [MainThread]: Running with dbt=1.11.7
+[0m07:45:14.337487 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'no_print': 'None', 'printer_width': '80', 'log_format': 'default', 'invocation_command': 'dbt debug', 'version_check': 'True', 'cache_selected_only': 'False', 'quiet': 'False', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'use_colors': 'True', 'target_path': 'None', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects', 'log_path': '/workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/logs', 'indirect_selection': 'eager', 'fail_fast': 'False', 'introspect': 'True', 'write_json': 'True', 'empty': 'None', 'debug': 'False', 'warn_error': 'None'}
+[0m07:45:14.352406 [info ] [MainThread]: dbt version: 1.11.7
+[0m07:45:14.353237 [info ] [MainThread]: python version: 3.12.1
+[0m07:45:14.353995 [info ] [MainThread]: python path: /usr/local/python/3.12.1/bin/python3
+[0m07:45:14.354753 [info ] [MainThread]: os info: Linux-6.8.0-1044-azure-x86_64-with-glibc2.39
+[0m07:45:14.358870 [info ] [MainThread]: Using profiles dir at /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects
+[0m07:45:14.359947 [info ] [MainThread]: Using profiles.yml file at /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/profiles.yml
+[0m07:45:14.360886 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/dbt_project.yml
+[0m07:45:14.591469 [info ] [MainThread]: Configuration:
+[0m07:45:14.592253 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m07:45:14.592821 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m07:45:14.593362 [info ] [MainThread]: Required dependencies:
+[0m07:45:14.593957 [debug] [MainThread]: Executing "git --help"
+[0m07:45:14.597012 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:45:14.597817 [debug] [MainThread]: STDERR: "b''"
+[0m07:45:14.598462 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m07:45:14.599211 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m07:45:14.600008 [info ] [MainThread]: [31m1 check failed:[0m
+[0m07:45:14.600947 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  The profiles.yml file at /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/profiles.yml is empty
+  
+
+
+[0m07:45:14.603257 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.28920355, "process_in_blocks": "56", "process_kernel_time": 0.222706, "process_mem_max_rss": "119332", "process_out_blocks": "16", "process_user_time": 3.079285}
+[0m07:45:14.604126 [debug] [MainThread]: Command `dbt debug` failed at 07:45:14.603976 after 0.29 seconds
+[0m07:45:14.604699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x788940cfcaa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7889456bbaa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x788940c94740>]}
+[0m07:45:14.605266 [debug] [MainThread]: Flushing usage events
+[0m07:45:15.638484 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:46:52.878389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71e4dd2613a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71e4dd90e750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71e4dd1dcb60>]}
+
+
+============================== 07:46:52.883292 | 4b34eec8-7159-4a79-8eb3-9147e3478e3b ==============================
+[0m07:46:52.883292 [info ] [MainThread]: Running with dbt=1.11.7
+[0m07:46:52.884288 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'no_print': 'None', 'target_path': 'None', 'printer_width': '80', 'profiles_dir': '/workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects', 'log_format': 'default', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'quiet': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'write_json': 'True', 'log_path': '/workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/logs', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'introspect': 'True'}
+[0m07:46:52.897324 [info ] [MainThread]: dbt version: 1.11.7
+[0m07:46:52.897939 [info ] [MainThread]: python version: 3.12.1
+[0m07:46:52.898525 [info ] [MainThread]: python path: /usr/local/python/3.12.1/bin/python3
+[0m07:46:52.899195 [info ] [MainThread]: os info: Linux-6.8.0-1044-azure-x86_64-with-glibc2.39
+[0m07:46:54.673717 [info ] [MainThread]: Using profiles dir at /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects
+[0m07:46:54.674400 [info ] [MainThread]: Using profiles.yml file at /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/profiles.yml
+[0m07:46:54.674952 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/dbt_project.yml
+[0m07:46:54.675497 [info ] [MainThread]: adapter type: bigquery
+[0m07:46:54.676023 [info ] [MainThread]: adapter version: 1.11.1
+[0m07:46:54.796653 [info ] [MainThread]: Configuration:
+[0m07:46:54.797443 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m07:46:54.798118 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m07:46:54.798785 [info ] [MainThread]: Required dependencies:
+[0m07:46:54.799474 [debug] [MainThread]: Executing "git --help"
+[0m07:46:54.803056 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:46:54.803873 [debug] [MainThread]: STDERR: "b''"
+[0m07:46:54.804503 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m07:46:54.805492 [info ] [MainThread]: Connection:
+[0m07:46:54.806783 [info ] [MainThread]:   method: oauth
+[0m07:46:54.807434 [info ] [MainThread]:   database: zoomcampcapstoneproject
+[0m07:46:54.808086 [info ] [MainThread]:   execution_project: zoomcampcapstoneproject
+[0m07:46:54.808779 [info ] [MainThread]:   schema: flight_data
+[0m07:46:54.809432 [info ] [MainThread]:   location: EU
+[0m07:46:54.810225 [info ] [MainThread]:   priority: interactive
+[0m07:46:54.810945 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m07:46:54.812504 [info ] [MainThread]:   impersonate_service_account: None
+[0m07:46:54.813907 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m07:46:54.815053 [info ] [MainThread]:   job_retries: 1
+[0m07:46:54.815857 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m07:46:54.817549 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m07:46:54.818992 [info ] [MainThread]:   timeout_seconds: None
+[0m07:46:54.820191 [info ] [MainThread]:   client_id: None
+[0m07:46:54.820886 [info ] [MainThread]:   token_uri: None
+[0m07:46:54.822840 [info ] [MainThread]:   compute_region: None
+[0m07:46:54.823499 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m07:46:54.824417 [info ] [MainThread]:   gcs_bucket: None
+[0m07:46:54.825089 [info ] [MainThread]:   dataproc_batch: None
+[0m07:46:54.825927 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m07:46:55.098081 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m07:46:55.098708 [debug] [MainThread]: On debug: select 1 as id
+[0m07:46:55.099234 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:46:56.713338 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=zoomcampcapstoneproject&j=bq:EU:86facf48-17b9-4992-8135-79719be8a25b&page=queryresults
+[0m07:46:57.213053 [debug] [MainThread]: SQL status: OK in 0.499 seconds
+[0m07:46:57.738398 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m07:46:57.739092 [info ] [MainThread]: [32mAll checks passed![0m
+[0m07:46:57.739899 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 4.930429, "process_in_blocks": "40", "process_kernel_time": 0.628876, "process_mem_max_rss": "246144", "process_out_blocks": "24", "process_user_time": 4.716077}
+[0m07:46:57.740513 [debug] [MainThread]: Command `dbt debug` succeeded at 07:46:57.740406 after 4.93 seconds
+[0m07:46:57.741008 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m07:46:57.741487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71e4c923bef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71e4dda271d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71e4dd7877d0>]}
+[0m07:46:57.742019 [debug] [MainThread]: Flushing usage events
+[0m07:46:58.770792 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:47:17.812056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddec05bda0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddebdd2e70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddec058bc0>]}
+
+
+============================== 07:47:17.824519 | 52bc90b2-8ced-42c7-b1ed-80f4e71e5587 ==============================
+[0m07:47:17.824519 [info ] [MainThread]: Running with dbt=1.11.7
+[0m07:47:17.827118 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_path': '/workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/logs', 'invocation_command': 'dbt run', 'version_check': 'True', 'introspect': 'True', 'printer_width': '80', 'fail_fast': 'False', 'debug': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'static_parser': 'True', 'profiles_dir': '/workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects', 'warn_error': 'None', 'no_print': 'None', 'write_json': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'use_colors': 'True', 'target_path': 'None'}
+[0m07:47:19.726090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '52bc90b2-8ced-42c7-b1ed-80f4e71e5587', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddda374710>]}
+[0m07:47:19.820416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '52bc90b2-8ced-42c7-b1ed-80f4e71e5587', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddec1ec710>]}
+[0m07:47:19.821478 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m07:47:20.050943 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m07:47:20.051821 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m07:47:20.052395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '52bc90b2-8ced-42c7-b1ed-80f4e71e5587', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddd38b5640>]}
+[0m07:47:21.360243 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'fact_flights' in the 'models' section of file 'models/staging/schema.yml'
+[0m07:47:21.483511 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_projects.not_null_fact_flights_flight_date.a89bc21ec9' (models/staging/schema.yml) depends on a node named 'fact_flights' in package '' which was not found
+[0m07:47:21.484230 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.dbt_projects.not_null_fact_flights_total_flights.85edc0c4e8' (models/staging/schema.yml) depends on a node named 'fact_flights' in package '' which was not found
+[0m07:47:21.588374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '52bc90b2-8ced-42c7-b1ed-80f4e71e5587', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddd301dac0>]}
+[0m07:47:21.675912 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/manifest.json
+[0m07:47:21.677681 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/semantic_manifest.json
+[0m07:47:21.690330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '52bc90b2-8ced-42c7-b1ed-80f4e71e5587', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddd304e600>]}
+[0m07:47:21.690892 [info ] [MainThread]: Found 3 models, 3 data tests, 538 macros
+[0m07:47:21.691439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '52bc90b2-8ced-42c7-b1ed-80f4e71e5587', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddd3005430>]}
+[0m07:47:21.693292 [info ] [MainThread]: 
+[0m07:47:21.693852 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m07:47:21.694350 [info ] [MainThread]: 
+[0m07:47:21.695055 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m07:47:21.700141 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_zoomcampcapstoneproject'
+[0m07:47:21.700734 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:47:23.009096 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_zoomcampcapstoneproject_flight_data'
+[0m07:47:23.009823 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:47:23.578729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '52bc90b2-8ced-42c7-b1ed-80f4e71e5587', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddd30329f0>]}
+[0m07:47:23.579555 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:47:23.582619 [debug] [Thread-1 (]: Began running node model.dbt_projects.stg_flights
+[0m07:47:23.583281 [info ] [Thread-1 (]: 1 of 2 START sql view model flight_data.stg_flights ............................ [RUN]
+[0m07:47:23.583987 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_zoomcampcapstoneproject_flight_data, now model.dbt_projects.stg_flights)
+[0m07:47:23.584549 [debug] [Thread-1 (]: Began compiling node model.dbt_projects.stg_flights
+[0m07:47:23.592727 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_projects.stg_flights"
+[0m07:47:23.593794 [debug] [Thread-1 (]: Began executing node model.dbt_projects.stg_flights
+[0m07:47:23.631695 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_projects.stg_flights"
+[0m07:47:23.632820 [debug] [Thread-1 (]: On model.dbt_projects.stg_flights: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_projects", "target_name": "dev", "node_id": "model.dbt_projects.stg_flights"} */
+
+
+  create or replace view `zoomcampcapstoneproject`.`flight_data`.`stg_flights`
+  OPTIONS()
+  as SELECT
+    DATE(FlightDate) AS flight_date,
+    Airline AS airline,
+    Origin AS origin_airport,
+    Dest AS destination_airport,
+
+    OriginCityName AS origin_city,
+    DestCityName AS destination_city,
+    OriginState AS origin_state,
+    DestState AS destination_state,
+
+    DepDelayMinutes AS departure_delay_minutes,
+    ArrDelayMinutes AS arrival_delay_minutes,
+
+    DepTime AS departure_time,
+    ArrTime AS arrival_time,
+
+    AirTime AS air_time,
+    TaxiOut AS taxi_out,
+    TaxiIn AS taxi_in,
+
+    Cancelled AS cancelled,
+    Diverted AS diverted,
+
+    Distance AS distance
+
+FROM `zoomcampcapstoneproject.flight_data.flights_2022`;
+
+
+[0m07:47:23.633440 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:47:24.400893 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=zoomcampcapstoneproject&j=bq:EU:a94bc28f-ddd9-4f7d-8bd4-0295fd8d61e4&page=queryresults
+[0m07:47:25.297147 [debug] [Thread-1 (]: SQL status: OK in 0.896 seconds
+[0m07:47:25.349067 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '52bc90b2-8ced-42c7-b1ed-80f4e71e5587', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddd361b4d0>]}
+[0m07:47:25.349939 [info ] [Thread-1 (]: 1 of 2 OK created sql view model flight_data.stg_flights ....................... [[32mCREATE VIEW (0 processed)[0m in 1.76s]
+[0m07:47:25.350836 [debug] [Thread-1 (]: Finished running node model.dbt_projects.stg_flights
+[0m07:47:25.351790 [debug] [Thread-3 (]: Began running node model.dbt_projects.fact_flight_weather
+[0m07:47:25.352418 [info ] [Thread-3 (]: 2 of 2 START sql table model flight_data.fact_flight_weather ................... [RUN]
+[0m07:47:25.353156 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_projects.fact_flight_weather'
+[0m07:47:25.353661 [debug] [Thread-3 (]: Began compiling node model.dbt_projects.fact_flight_weather
+[0m07:47:25.357226 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_projects.fact_flight_weather"
+[0m07:47:25.359293 [debug] [Thread-3 (]: Began executing node model.dbt_projects.fact_flight_weather
+[0m07:47:25.391981 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_projects.fact_flight_weather"
+[0m07:47:25.392811 [debug] [Thread-3 (]: On model.dbt_projects.fact_flight_weather: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_projects", "target_name": "dev", "node_id": "model.dbt_projects.fact_flight_weather"} */
+
+  
+    
+
+    create or replace table `zoomcampcapstoneproject`.`flight_data`.`fact_flight_weather`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      SELECT
+    flight_date,
+    origin_airport,
+    destination_airport,
+    origin_city,
+    destination_city,
+    origin_state,
+    destination_state,
+
+    COUNT(*) AS total_flights,
+    AVG(departure_delay_minutes) AS avg_departure_delay_minutes,
+    AVG(arrival_delay_minutes) AS avg_arrival_delay_minutes,
+    SUM(CASE WHEN cancelled = 1 THEN 1 ELSE 0 END) AS total_cancelled_flights,
+    SUM(CASE WHEN diverted = 1 THEN 1 ELSE 0 END) AS total_diverted_flights,
+    AVG(distance) AS avg_distance,
+    AVG(air_time) AS avg_air_time,
+    AVG(taxi_out) AS avg_taxi_out,
+    AVG(taxi_in) AS avg_taxi_in
+
+FROM `zoomcampcapstoneproject`.`flight_data`.`stg_flights`
+GROUP BY
+    flight_date,
+    origin_airport,
+    destination_airport,
+    origin_city,
+    destination_city,
+    origin_state,
+    destination_state
+    );
+  
+[0m07:47:25.393381 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m07:47:26.652430 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=zoomcampcapstoneproject&j=bq:EU:555ba13b-99c2-48ac-86dd-7e488663ceac&page=queryresults
+[0m07:47:27.037981 [error] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=zoomcampcapstoneproject&j=bq:EU:555ba13b-99c2-48ac-86dd-7e488663ceac&page=queryresults
+[0m07:47:27.052257 [debug] [Thread-3 (]: Database Error in model fact_flight_weather (models/marts/fact_flight_weather.sql)
+  No matching signature for operator = for argument types: BOOL, INT64
+    Signature: T1 = T1
+      Unable to find common supertype for templated argument <T1>
+        Input types for <T1>: {INT64, BOOL} at [26:19]
+  compiled code at target/run/dbt_projects/models/marts/fact_flight_weather.sql
+[0m07:47:27.053016 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '52bc90b2-8ced-42c7-b1ed-80f4e71e5587', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddd010ce00>]}
+[0m07:47:27.053788 [error] [Thread-3 (]: 2 of 2 ERROR creating sql table model flight_data.fact_flight_weather .......... [[31mERROR[0m in 1.70s]
+[0m07:47:27.054617 [debug] [Thread-3 (]: Finished running node model.dbt_projects.fact_flight_weather
+[0m07:47:27.055307 [debug] [Thread-7 (]: Marking all children of 'model.dbt_projects.fact_flight_weather' to be skipped because of status 'error'.  Reason: Database Error in model fact_flight_weather (models/marts/fact_flight_weather.sql)
+  No matching signature for operator = for argument types: BOOL, INT64
+    Signature: T1 = T1
+      Unable to find common supertype for templated argument <T1>
+        Input types for <T1>: {INT64, BOOL} at [26:19]
+  compiled code at target/run/dbt_projects/models/marts/fact_flight_weather.sql.
+[0m07:47:27.057611 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m07:47:27.058271 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:47:27.058710 [debug] [MainThread]: Connection 'list_zoomcampcapstoneproject' was properly closed.
+[0m07:47:27.059126 [debug] [MainThread]: Connection 'model.dbt_projects.stg_flights' was properly closed.
+[0m07:47:27.059697 [debug] [MainThread]: Connection 'model.dbt_projects.fact_flight_weather' was properly closed.
+[0m07:47:27.060148 [info ] [MainThread]: 
+[0m07:47:27.060778 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 5.37 seconds (5.37s).
+[0m07:47:27.062365 [debug] [MainThread]: Command end result
+[0m07:47:27.090493 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/manifest.json
+[0m07:47:27.092309 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/semantic_manifest.json
+[0m07:47:27.098169 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/run_results.json
+[0m07:47:27.098646 [info ] [MainThread]: 
+[0m07:47:27.099286 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m07:47:27.099852 [info ] [MainThread]: 
+[0m07:47:27.100499 [error] [MainThread]: [31mFailure in model fact_flight_weather (models/marts/fact_flight_weather.sql)[0m
+[0m07:47:27.101146 [error] [MainThread]:   Database Error in model fact_flight_weather (models/marts/fact_flight_weather.sql)
+  No matching signature for operator = for argument types: BOOL, INT64
+    Signature: T1 = T1
+      Unable to find common supertype for templated argument <T1>
+        Input types for <T1>: {INT64, BOOL} at [26:19]
+  compiled code at target/run/dbt_projects/models/marts/fact_flight_weather.sql
+[0m07:47:27.101672 [info ] [MainThread]: 
+[0m07:47:27.102298 [info ] [MainThread]:   compiled code at target/compiled/dbt_projects/models/marts/fact_flight_weather.sql
+[0m07:47:27.102791 [info ] [MainThread]: 
+[0m07:47:27.103336 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=2
+[0m07:47:27.104127 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 9.354647, "process_in_blocks": "736", "process_kernel_time": 0.6717, "process_mem_max_rss": "261012", "process_out_blocks": "3408", "process_user_time": 6.484189}
+[0m07:47:27.104705 [debug] [MainThread]: Command `dbt run` failed at 07:47:27.104603 after 9.36 seconds
+[0m07:47:27.105374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddebd179e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddd30200b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddd3260fb0>]}
+[0m07:47:27.106074 [debug] [MainThread]: Flushing usage events
+[0m07:47:28.098322 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:49:14.073487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c07cef7df40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c07cd253440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c07cd42e7e0>]}
+
+
+============================== 07:49:14.078653 | 82048b3b-ba2e-43f5-bec0-d38d10232ffc ==============================
+[0m07:49:14.078653 [info ] [MainThread]: Running with dbt=1.11.7
+[0m07:49:14.079718 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'static_parser': 'True', 'debug': 'False', 'empty': 'False', 'version_check': 'True', 'profiles_dir': '/workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects', 'cache_selected_only': 'False', 'no_print': 'None', 'use_colors': 'True', 'write_json': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'fail_fast': 'False', 'warn_error': 'None', 'introspect': 'True', 'log_path': '/workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/logs', 'log_format': 'default', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'use_experimental_parser': 'False'}
+[0m07:49:15.890078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '82048b3b-ba2e-43f5-bec0-d38d10232ffc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c07b8325940>]}
+[0m07:49:15.961246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '82048b3b-ba2e-43f5-bec0-d38d10232ffc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c07b82a4140>]}
+[0m07:49:15.961968 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m07:49:16.188999 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m07:49:16.297177 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:49:16.297858 [debug] [MainThread]: Partial parsing: updated file: dbt_projects://models/marts/fact_flight_weather.sql
+[0m07:49:16.666317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '82048b3b-ba2e-43f5-bec0-d38d10232ffc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c07b3bf7bc0>]}
+[0m07:49:16.744054 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/manifest.json
+[0m07:49:16.745987 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/semantic_manifest.json
+[0m07:49:16.758418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '82048b3b-ba2e-43f5-bec0-d38d10232ffc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c07b3643410>]}
+[0m07:49:16.759055 [info ] [MainThread]: Found 3 models, 3 data tests, 538 macros
+[0m07:49:16.759638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '82048b3b-ba2e-43f5-bec0-d38d10232ffc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c07b3ef0d40>]}
+[0m07:49:16.761479 [info ] [MainThread]: 
+[0m07:49:16.762074 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m07:49:16.762587 [info ] [MainThread]: 
+[0m07:49:16.763265 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m07:49:16.768206 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_zoomcampcapstoneproject'
+[0m07:49:16.768756 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:49:17.886808 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_zoomcampcapstoneproject, now list_zoomcampcapstoneproject_flight_data)
+[0m07:49:17.887503 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:49:18.394666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '82048b3b-ba2e-43f5-bec0-d38d10232ffc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c07b822fec0>]}
+[0m07:49:18.395377 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:49:18.398889 [debug] [Thread-1 (]: Began running node model.dbt_projects.stg_flights
+[0m07:49:18.399571 [info ] [Thread-1 (]: 1 of 2 START sql view model flight_data.stg_flights ............................ [RUN]
+[0m07:49:18.400269 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_zoomcampcapstoneproject_flight_data, now model.dbt_projects.stg_flights)
+[0m07:49:18.400825 [debug] [Thread-1 (]: Began compiling node model.dbt_projects.stg_flights
+[0m07:49:18.408629 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_projects.stg_flights"
+[0m07:49:18.409562 [debug] [Thread-1 (]: Began executing node model.dbt_projects.stg_flights
+[0m07:49:18.446025 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_projects.stg_flights"
+[0m07:49:18.446869 [debug] [Thread-1 (]: On model.dbt_projects.stg_flights: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_projects", "target_name": "dev", "node_id": "model.dbt_projects.stg_flights"} */
+
+
+  create or replace view `zoomcampcapstoneproject`.`flight_data`.`stg_flights`
+  OPTIONS()
+  as SELECT
+    DATE(FlightDate) AS flight_date,
+    Airline AS airline,
+    Origin AS origin_airport,
+    Dest AS destination_airport,
+
+    OriginCityName AS origin_city,
+    DestCityName AS destination_city,
+    OriginState AS origin_state,
+    DestState AS destination_state,
+
+    DepDelayMinutes AS departure_delay_minutes,
+    ArrDelayMinutes AS arrival_delay_minutes,
+
+    DepTime AS departure_time,
+    ArrTime AS arrival_time,
+
+    AirTime AS air_time,
+    TaxiOut AS taxi_out,
+    TaxiIn AS taxi_in,
+
+    Cancelled AS cancelled,
+    Diverted AS diverted,
+
+    Distance AS distance
+
+FROM `zoomcampcapstoneproject.flight_data.flights_2022`;
+
+
+[0m07:49:18.447439 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:49:19.171589 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=zoomcampcapstoneproject&j=bq:EU:82c4ff35-81b9-4b79-bfaf-0d1fea404f90&page=queryresults
+[0m07:49:20.119931 [debug] [Thread-1 (]: SQL status: OK in 0.948 seconds
+[0m07:49:20.169522 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '82048b3b-ba2e-43f5-bec0-d38d10232ffc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c07b81b3a40>]}
+[0m07:49:20.170375 [info ] [Thread-1 (]: 1 of 2 OK created sql view model flight_data.stg_flights ....................... [[32mCREATE VIEW (0 processed)[0m in 1.77s]
+[0m07:49:20.171244 [debug] [Thread-1 (]: Finished running node model.dbt_projects.stg_flights
+[0m07:49:20.172237 [debug] [Thread-3 (]: Began running node model.dbt_projects.fact_flight_weather
+[0m07:49:20.173020 [info ] [Thread-3 (]: 2 of 2 START sql table model flight_data.fact_flight_weather ................... [RUN]
+[0m07:49:20.173744 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_projects.fact_flight_weather'
+[0m07:49:20.174235 [debug] [Thread-3 (]: Began compiling node model.dbt_projects.fact_flight_weather
+[0m07:49:20.177116 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_projects.fact_flight_weather"
+[0m07:49:20.177922 [debug] [Thread-3 (]: Began executing node model.dbt_projects.fact_flight_weather
+[0m07:49:20.212054 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_projects.fact_flight_weather"
+[0m07:49:20.213197 [debug] [Thread-3 (]: On model.dbt_projects.fact_flight_weather: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_projects", "target_name": "dev", "node_id": "model.dbt_projects.fact_flight_weather"} */
+
+  
+    
+
+    create or replace table `zoomcampcapstoneproject`.`flight_data`.`fact_flight_weather`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      SELECT
+    flight_date,
+    origin_airport,
+    destination_airport,
+    origin_city,
+    destination_city,
+    origin_state,
+    destination_state,
+
+    COUNT(*) AS total_flights,
+    AVG(departure_delay_minutes) AS avg_departure_delay_minutes,
+    AVG(arrival_delay_minutes) AS avg_arrival_delay_minutes,
+    SUM(CASE WHEN cancelled THEN 1 ELSE 0 END) AS total_cancelled_flights,
+    SUM(CASE WHEN diverted THEN 1 ELSE 0 END) AS total_diverted_flights,
+    AVG(distance) AS avg_distance,
+    AVG(air_time) AS avg_air_time,
+    AVG(taxi_out) AS avg_taxi_out,
+    AVG(taxi_in) AS avg_taxi_in
+
+FROM `zoomcampcapstoneproject`.`flight_data`.`stg_flights`
+GROUP BY
+    flight_date,
+    origin_airport,
+    destination_airport,
+    origin_city,
+    destination_city,
+    origin_state,
+    destination_state
+    );
+  
+[0m07:49:20.214051 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m07:49:21.137393 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=zoomcampcapstoneproject&j=bq:EU:1e7e3d71-3d3f-4e22-8488-965027bd95b5&page=queryresults
+[0m07:49:24.023374 [debug] [Thread-3 (]: SQL status: OK in 2.885 seconds
+[0m07:49:24.526446 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '82048b3b-ba2e-43f5-bec0-d38d10232ffc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c07b02228a0>]}
+[0m07:49:24.527352 [info ] [Thread-3 (]: 2 of 2 OK created sql table model flight_data.fact_flight_weather .............. [[32mCREATE TABLE (92.7k rows, 10.0 MiB processed)[0m in 4.35s]
+[0m07:49:24.528169 [debug] [Thread-3 (]: Finished running node model.dbt_projects.fact_flight_weather
+[0m07:49:24.529788 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m07:49:24.530479 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:49:24.530918 [debug] [MainThread]: Connection 'model.dbt_projects.stg_flights' was properly closed.
+[0m07:49:24.531326 [debug] [MainThread]: Connection 'model.dbt_projects.fact_flight_weather' was properly closed.
+[0m07:49:24.531809 [info ] [MainThread]: 
+[0m07:49:24.532310 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 7.77 seconds (7.77s).
+[0m07:49:24.533431 [debug] [MainThread]: Command end result
+[0m07:49:24.558000 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/manifest.json
+[0m07:49:24.559960 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/semantic_manifest.json
+[0m07:49:24.565694 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/run_results.json
+[0m07:49:24.566150 [info ] [MainThread]: 
+[0m07:49:24.566816 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m07:49:24.567306 [info ] [MainThread]: 
+[0m07:49:24.567876 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m07:49:24.568599 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.564597, "process_in_blocks": "0", "process_kernel_time": 0.733624, "process_mem_max_rss": "257736", "process_out_blocks": "3408", "process_user_time": 5.342571}
+[0m07:49:24.569165 [debug] [MainThread]: Command `dbt run` succeeded at 07:49:24.569062 after 10.57 seconds
+[0m07:49:24.569645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c07ccbd8890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c07cd3f0c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c07b3bc71d0>]}
+[0m07:49:24.570126 [debug] [MainThread]: Flushing usage events
+[0m07:49:25.632581 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:54:26.906317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de0286eed80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de026479610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de02647a090>]}
+
+
+============================== 07:54:26.921170 | 22a90066-cbf3-4fc0-b30f-cf94a3514de1 ==============================
+[0m07:54:26.921170 [info ] [MainThread]: Running with dbt=1.11.7
+[0m07:54:26.924476 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'target_path': 'None', 'no_print': 'None', 'printer_width': '80', 'profiles_dir': '/workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'partial_parse': 'True', 'write_json': 'True', 'version_check': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'warn_error': 'None', 'log_path': '/workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/logs', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test', 'log_format': 'default'}
+[0m07:54:28.937051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '22a90066-cbf3-4fc0-b30f-cf94a3514de1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de014749160>]}
+[0m07:54:29.003855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '22a90066-cbf3-4fc0-b30f-cf94a3514de1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de0284f1730>]}
+[0m07:54:29.004548 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m07:54:29.248566 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m07:54:29.367348 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+[0m07:54:29.368044 [debug] [MainThread]: Partial parsing: added file: dbt_projects://models/marts/fact_flights.sql
+[0m07:54:29.368463 [debug] [MainThread]: Partial parsing: deleted file: dbt_projects://models/marts/fact_flight_weather.sql
+[0m07:54:29.696084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '22a90066-cbf3-4fc0-b30f-cf94a3514de1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de00d60a090>]}
+[0m07:54:29.781944 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/manifest.json
+[0m07:54:29.784185 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/semantic_manifest.json
+[0m07:54:29.805387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '22a90066-cbf3-4fc0-b30f-cf94a3514de1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de00cd4e870>]}
+[0m07:54:29.805981 [info ] [MainThread]: Found 3 models, 3 data tests, 538 macros
+[0m07:54:29.806519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '22a90066-cbf3-4fc0-b30f-cf94a3514de1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de00cd183b0>]}
+[0m07:54:29.809056 [info ] [MainThread]: 
+[0m07:54:29.809718 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m07:54:29.810346 [info ] [MainThread]: 
+[0m07:54:29.811202 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m07:54:29.817847 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_zoomcampcapstoneproject_flight_data'
+[0m07:54:29.818665 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:54:30.998720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '22a90066-cbf3-4fc0-b30f-cf94a3514de1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de00d3a7500>]}
+[0m07:54:30.999473 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:54:31.002247 [debug] [Thread-1 (]: Began running node test.dbt_projects.not_null_stg_flights_destination_airport.c0027887a1
+[0m07:54:31.002736 [debug] [Thread-2 (]: Began running node test.dbt_projects.not_null_stg_flights_flight_date.afb316eb19
+[0m07:54:31.003328 [debug] [Thread-3 (]: Began running node test.dbt_projects.not_null_stg_flights_origin_airport.ab9babbb91
+[0m07:54:31.003865 [info ] [Thread-1 (]: 1 of 3 START test not_null_stg_flights_destination_airport ..................... [RUN]
+[0m07:54:31.004403 [info ] [Thread-2 (]: 2 of 3 START test not_null_stg_flights_flight_date ............................. [RUN]
+[0m07:54:31.005132 [info ] [Thread-3 (]: 3 of 3 START test not_null_stg_flights_origin_airport .......................... [RUN]
+[0m07:54:31.006009 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_zoomcampcapstoneproject_flight_data, now test.dbt_projects.not_null_stg_flights_destination_airport.c0027887a1)
+[0m07:54:31.006645 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.dbt_projects.not_null_stg_flights_flight_date.afb316eb19'
+[0m07:54:31.008734 [debug] [Thread-2 (]: Began compiling node test.dbt_projects.not_null_stg_flights_flight_date.afb316eb19
+[0m07:54:31.007998 [debug] [Thread-1 (]: Began compiling node test.dbt_projects.not_null_stg_flights_destination_airport.c0027887a1
+[0m07:54:31.007299 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.dbt_projects.not_null_stg_flights_origin_airport.ab9babbb91'
+[0m07:54:31.028891 [debug] [Thread-3 (]: Began compiling node test.dbt_projects.not_null_stg_flights_origin_airport.ab9babbb91
+[0m07:54:31.040722 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_projects.not_null_stg_flights_destination_airport.c0027887a1"
+[0m07:54:31.041297 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_projects.not_null_stg_flights_flight_date.afb316eb19"
+[0m07:54:31.045146 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_projects.not_null_stg_flights_origin_airport.ab9babbb91"
+[0m07:54:31.046190 [debug] [Thread-1 (]: Began executing node test.dbt_projects.not_null_stg_flights_destination_airport.c0027887a1
+[0m07:54:31.052112 [debug] [Thread-2 (]: Began executing node test.dbt_projects.not_null_stg_flights_flight_date.afb316eb19
+[0m07:54:31.052729 [debug] [Thread-3 (]: Began executing node test.dbt_projects.not_null_stg_flights_origin_airport.ab9babbb91
+[0m07:54:31.100145 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_projects.not_null_stg_flights_origin_airport.ab9babbb91"
+[0m07:54:31.100696 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_projects.not_null_stg_flights_destination_airport.c0027887a1"
+[0m07:54:31.101484 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_projects.not_null_stg_flights_flight_date.afb316eb19"
+[0m07:54:31.103154 [debug] [Thread-2 (]: On test.dbt_projects.not_null_stg_flights_flight_date.afb316eb19: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_projects", "target_name": "dev", "node_id": "test.dbt_projects.not_null_stg_flights_flight_date.afb316eb19"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select flight_date
+from `zoomcampcapstoneproject`.`flight_data`.`stg_flights`
+where flight_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m07:54:31.102356 [debug] [Thread-1 (]: On test.dbt_projects.not_null_stg_flights_destination_airport.c0027887a1: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_projects", "target_name": "dev", "node_id": "test.dbt_projects.not_null_stg_flights_destination_airport.c0027887a1"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select destination_airport
+from `zoomcampcapstoneproject`.`flight_data`.`stg_flights`
+where destination_airport is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m07:54:31.103661 [debug] [Thread-3 (]: On test.dbt_projects.not_null_stg_flights_origin_airport.ab9babbb91: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_projects", "target_name": "dev", "node_id": "test.dbt_projects.not_null_stg_flights_origin_airport.ab9babbb91"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select origin_airport
+from `zoomcampcapstoneproject`.`flight_data`.`stg_flights`
+where origin_airport is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m07:54:31.105987 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m07:54:31.105139 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:54:31.104298 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m07:54:32.131353 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=zoomcampcapstoneproject&j=bq:EU:56bf0512-7c94-43a1-86d4-2a5548b07b85&page=queryresults
+[0m07:54:32.137802 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=zoomcampcapstoneproject&j=bq:EU:0d6640eb-5b97-46b3-84c7-4a7bac359f46&page=queryresults
+[0m07:54:32.163805 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=zoomcampcapstoneproject&j=bq:EU:db3cb42d-0925-4c5a-880d-5156182f5af0&page=queryresults
+[0m07:54:32.608472 [debug] [Thread-2 (]: SQL status: OK in 0.470 seconds
+[0m07:54:32.612226 [debug] [Thread-1 (]: SQL status: OK in 0.480 seconds
+[0m07:54:32.838448 [debug] [Thread-3 (]: SQL status: OK in 0.674 seconds
+[0m07:54:33.567509 [info ] [Thread-2 (]: 2 of 3 PASS not_null_stg_flights_flight_date ................................... [[32mPASS[0m in 2.56s]
+[0m07:54:33.568625 [debug] [Thread-2 (]: Finished running node test.dbt_projects.not_null_stg_flights_flight_date.afb316eb19
+[0m07:54:33.660090 [info ] [Thread-1 (]: 1 of 3 PASS not_null_stg_flights_destination_airport ........................... [[32mPASS[0m in 2.65s]
+[0m07:54:33.661052 [debug] [Thread-1 (]: Finished running node test.dbt_projects.not_null_stg_flights_destination_airport.c0027887a1
+[0m07:54:33.720779 [info ] [Thread-3 (]: 3 of 3 PASS not_null_stg_flights_origin_airport ................................ [[32mPASS[0m in 2.71s]
+[0m07:54:33.721808 [debug] [Thread-3 (]: Finished running node test.dbt_projects.not_null_stg_flights_origin_airport.ab9babbb91
+[0m07:54:33.723997 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m07:54:33.725099 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:54:33.725775 [debug] [MainThread]: Connection 'test.dbt_projects.not_null_stg_flights_destination_airport.c0027887a1' was properly closed.
+[0m07:54:33.726501 [debug] [MainThread]: Connection 'test.dbt_projects.not_null_stg_flights_flight_date.afb316eb19' was properly closed.
+[0m07:54:33.727255 [debug] [MainThread]: Connection 'test.dbt_projects.not_null_stg_flights_origin_airport.ab9babbb91' was properly closed.
+[0m07:54:33.727942 [info ] [MainThread]: 
+[0m07:54:33.728568 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 3.92 seconds (3.92s).
+[0m07:54:33.730338 [debug] [MainThread]: Command end result
+[0m07:54:33.760855 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/manifest.json
+[0m07:54:33.762648 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/semantic_manifest.json
+[0m07:54:33.771811 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/run_results.json
+[0m07:54:33.772457 [info ] [MainThread]: 
+[0m07:54:33.773515 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m07:54:33.774546 [info ] [MainThread]: 
+[0m07:54:33.775413 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m07:54:33.776658 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 6.9301286, "process_in_blocks": "0", "process_kernel_time": 0.737515, "process_mem_max_rss": "260356", "process_out_blocks": "3440", "process_user_time": 5.486202}
+[0m07:54:33.777595 [debug] [MainThread]: Command `dbt test` succeeded at 07:54:33.777413 after 6.93 seconds
+[0m07:54:33.778619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de025b3bb30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de02b0b7ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7de02b0b7aa0>]}
+[0m07:54:33.779623 [debug] [MainThread]: Flushing usage events
+[0m07:54:34.773141 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:58:49.798565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x731532043020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x731531fe2e70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7315320431a0>]}
+
+
+============================== 07:58:49.803863 | 36912e7b-578d-43ad-9fc3-0c23f02412f6 ==============================
+[0m07:58:49.803863 [info ] [MainThread]: Running with dbt=1.11.7
+[0m07:58:49.804923 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': '/workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/logs', 'no_print': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'debug': 'False', 'partial_parse': 'True', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'write_json': 'True', 'introspect': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'printer_width': '80', 'profiles_dir': '/workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects', 'indirect_selection': 'eager', 'target_path': 'None', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'empty': 'False'}
+[0m07:58:51.872304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '36912e7b-578d-43ad-9fc3-0c23f02412f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73151d83a6f0>]}
+[0m07:58:51.945898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '36912e7b-578d-43ad-9fc3-0c23f02412f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73151d98f4a0>]}
+[0m07:58:51.946693 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m07:58:52.228832 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m07:58:52.352162 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:58:52.352879 [debug] [MainThread]: Partial parsing: updated file: dbt_projects://models/marts/fact_flights.sql
+[0m07:58:52.650594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '36912e7b-578d-43ad-9fc3-0c23f02412f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73151cae5100>]}
+[0m07:58:52.729984 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/manifest.json
+[0m07:58:52.732620 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/semantic_manifest.json
+[0m07:58:52.745550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '36912e7b-578d-43ad-9fc3-0c23f02412f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73151c9a92e0>]}
+[0m07:58:52.746114 [info ] [MainThread]: Found 3 models, 3 data tests, 538 macros
+[0m07:58:52.746690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '36912e7b-578d-43ad-9fc3-0c23f02412f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73151cae54f0>]}
+[0m07:58:52.748607 [info ] [MainThread]: 
+[0m07:58:52.749209 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m07:58:52.749730 [info ] [MainThread]: 
+[0m07:58:52.750401 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m07:58:52.755781 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_zoomcampcapstoneproject'
+[0m07:58:52.756315 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:58:53.906587 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_zoomcampcapstoneproject, now list_zoomcampcapstoneproject_flight_data)
+[0m07:58:53.907216 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:58:54.451199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '36912e7b-578d-43ad-9fc3-0c23f02412f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x731533f3ab10>]}
+[0m07:58:54.452067 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:58:54.454940 [debug] [Thread-1 (]: Began running node model.dbt_projects.stg_flights
+[0m07:58:54.455639 [info ] [Thread-1 (]: 1 of 2 START sql view model flight_data.stg_flights ............................ [RUN]
+[0m07:58:54.456279 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_zoomcampcapstoneproject_flight_data, now model.dbt_projects.stg_flights)
+[0m07:58:54.456889 [debug] [Thread-1 (]: Began compiling node model.dbt_projects.stg_flights
+[0m07:58:54.464597 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_projects.stg_flights"
+[0m07:58:54.465661 [debug] [Thread-1 (]: Began executing node model.dbt_projects.stg_flights
+[0m07:58:54.495880 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_projects.stg_flights"
+[0m07:58:54.496667 [debug] [Thread-1 (]: On model.dbt_projects.stg_flights: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_projects", "target_name": "dev", "node_id": "model.dbt_projects.stg_flights"} */
+
+
+  create or replace view `zoomcampcapstoneproject`.`flight_data`.`stg_flights`
+  OPTIONS()
+  as SELECT
+    DATE(FlightDate) AS flight_date,
+    Airline AS airline,
+    Origin AS origin_airport,
+    Dest AS destination_airport,
+
+    OriginCityName AS origin_city,
+    DestCityName AS destination_city,
+    OriginState AS origin_state,
+    DestState AS destination_state,
+
+    DepDelayMinutes AS departure_delay_minutes,
+    ArrDelayMinutes AS arrival_delay_minutes,
+
+    DepTime AS departure_time,
+    ArrTime AS arrival_time,
+
+    AirTime AS air_time,
+    TaxiOut AS taxi_out,
+    TaxiIn AS taxi_in,
+
+    Cancelled AS cancelled,
+    Diverted AS diverted,
+
+    Distance AS distance
+
+FROM `zoomcampcapstoneproject.flight_data.flights_2022`;
+
+
+[0m07:58:54.497231 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:58:55.218785 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=zoomcampcapstoneproject&j=bq:EU:b7337e82-24de-4b9d-a83a-6d53412f33af&page=queryresults
+[0m07:58:56.131378 [debug] [Thread-1 (]: SQL status: OK in 0.912 seconds
+[0m07:58:56.179208 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36912e7b-578d-43ad-9fc3-0c23f02412f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73151d473aa0>]}
+[0m07:58:56.180094 [info ] [Thread-1 (]: 1 of 2 OK created sql view model flight_data.stg_flights ....................... [[32mCREATE VIEW (0 processed)[0m in 1.72s]
+[0m07:58:56.181007 [debug] [Thread-1 (]: Finished running node model.dbt_projects.stg_flights
+[0m07:58:56.182043 [debug] [Thread-3 (]: Began running node model.dbt_projects.fact_flights
+[0m07:58:56.182691 [info ] [Thread-3 (]: 2 of 2 START sql table model flight_data.fact_flights .......................... [RUN]
+[0m07:58:56.183471 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.dbt_projects.fact_flights'
+[0m07:58:56.184109 [debug] [Thread-3 (]: Began compiling node model.dbt_projects.fact_flights
+[0m07:58:56.189595 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbt_projects.fact_flights"
+[0m07:58:56.190263 [debug] [Thread-3 (]: Began executing node model.dbt_projects.fact_flights
+[0m07:58:56.251346 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbt_projects.fact_flights"
+[0m07:58:56.255868 [debug] [Thread-3 (]: On model.dbt_projects.fact_flights: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_projects", "target_name": "dev", "node_id": "model.dbt_projects.fact_flights"} */
+
+  
+    
+
+    create or replace table `zoomcampcapstoneproject`.`flight_data`.`fact_flights`
+      
+    partition by flight_date
+    cluster by origin_airport, destination_airport
+
+    
+    OPTIONS()
+    as (
+      
+
+SELECT
+    flight_date,
+    origin_airport,
+    destination_airport,
+    origin_city,
+    destination_city,
+    origin_state,
+    destination_state,
+
+    COUNT(*) AS total_flights,
+    AVG(departure_delay_minutes) AS avg_departure_delay_minutes,
+    AVG(arrival_delay_minutes) AS avg_arrival_delay_minutes,
+    SUM(CASE WHEN cancelled THEN 1 ELSE 0 END) AS total_cancelled_flights,
+    SUM(CASE WHEN diverted THEN 1 ELSE 0 END) AS total_diverted_flights,
+    AVG(distance) AS avg_distance,
+    AVG(air_time) AS avg_air_time,
+    AVG(taxi_out) AS avg_taxi_out,
+    AVG(taxi_in) AS avg_taxi_in
+
+FROM `zoomcampcapstoneproject`.`flight_data`.`stg_flights`
+GROUP BY
+    flight_date,
+    origin_airport,
+    destination_airport,
+    origin_city,
+    destination_city,
+    origin_state,
+    destination_state
+    );
+  
+[0m07:58:56.267622 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m07:58:57.265311 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=zoomcampcapstoneproject&j=bq:EU:52179e46-7c3f-4a35-8bb8-8112b6f03f08&page=queryresults
+[0m07:59:03.388771 [debug] [Thread-3 (]: SQL status: OK in 6.123 seconds
+[0m07:59:03.870561 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '36912e7b-578d-43ad-9fc3-0c23f02412f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73151cfd4350>]}
+[0m07:59:03.871359 [info ] [Thread-3 (]: 2 of 2 OK created sql table model flight_data.fact_flights ..................... [[32mCREATE TABLE (92.7k rows, 10.0 MiB processed)[0m in 7.69s]
+[0m07:59:03.872222 [debug] [Thread-3 (]: Finished running node model.dbt_projects.fact_flights
+[0m07:59:03.873760 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m07:59:03.874406 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:59:03.874852 [debug] [MainThread]: Connection 'model.dbt_projects.stg_flights' was properly closed.
+[0m07:59:03.875268 [debug] [MainThread]: Connection 'model.dbt_projects.fact_flights' was properly closed.
+[0m07:59:03.875753 [info ] [MainThread]: 
+[0m07:59:03.876259 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 11.13 seconds (11.13s).
+[0m07:59:03.877329 [debug] [MainThread]: Command end result
+[0m07:59:03.903072 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/manifest.json
+[0m07:59:03.904743 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/semantic_manifest.json
+[0m07:59:03.911738 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/Flight-and-Weather-Analytics-Pipeline/dbt_projects/target/run_results.json
+[0m07:59:03.912358 [info ] [MainThread]: 
+[0m07:59:03.913137 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m07:59:03.913805 [info ] [MainThread]: 
+[0m07:59:03.914451 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m07:59:03.915339 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 14.179563, "process_in_blocks": "0", "process_kernel_time": 0.735293, "process_mem_max_rss": "257836", "process_out_blocks": "3408", "process_user_time": 5.498889}
+[0m07:59:03.916091 [debug] [MainThread]: Command `dbt run` succeeded at 07:59:03.915966 after 14.18 seconds
+[0m07:59:03.916733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7315316bd790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7315319f0a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7315325911f0>]}
+[0m07:59:03.917363 [debug] [MainThread]: Flushing usage events
+[0m07:59:04.944448 [debug] [MainThread]: An error was encountered while trying to flush usage events
