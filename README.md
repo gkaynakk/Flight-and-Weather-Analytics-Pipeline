@@ -1,4 +1,8 @@
-# Flight & Weather Analytics Pipeline
+# ✈️ Flight & Weather Analytics Pipeline
+## 🚀 Project Overview
+
+An end-to-end data engineering pipeline that integrates flight and weather data to analyze the impact of weather conditions on flight delays and cancellations.
+
 ## 📌 Problem Description
 
 Air travel is highly influenced by external factors such as weather conditions, which can significantly impact flight delays, cancellations, and ticket pricing. However, these relationships are often not clearly visible to travelers or analysts due to fragmented data sources and lack of integrated analysis.
@@ -21,6 +25,7 @@ This project demonstrates how data engineering workflows can be used to transfor
 - **Storage format**: Parquet
 - **Version control**: GitHub
 - **Environment management**: Python venv
+- **Data Modeling**: Star Schema (fact & staging layers)
 
 ## 🏗️ Architecture
 
@@ -44,10 +49,85 @@ The project follows a modern data engineering architecture:
 6. **Visualization**  
    Looker Studio connects to BigQuery to create interactive dashboards for analysis.
 
+## 🧩 Data Model
+
+- `fact_flights`: Core flight metrics  
+- `stg_weather`: Cleaned weather data  
+- `fact_flights_weather`: Enriched dataset combining flights and weather
+
 ## 🔄 Pipeline Flow
 
 ```text
 Data Source → Python Ingestion → Parquet → BigQuery → dbt → Dashboard
-   
+```   
 
+## 📊 Dashboard
 
+This project includes an interactive dashboard built with Looker Studio to analyze the impact of weather conditions on flight performance.
+
+```markdown
+🔗 [View Dashboard](https://lookerstudio.google.com/s/uLRcgOfG6ag)
+```
+![Dashboard](images/DashboardZoomcamp.png)
+
+### Key Insights
+
+- Weather events are associated with increased flight delays
+- Severe conditions such as storms lead to the highest average delays
+- Overall cancellation rate remains low, but weather still impacts performance
+
+## ⚙️ How to Run
+
+This project is fully reproducible. Follow the steps below to run the pipeline end-to-end.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/Flight-and-Weather-Analytics-Pipeline.git
+cd Flight-and-Weather-Analytics-Pipeline
+```
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+### 3. Set up Google Cloud
+Create a GCP project
+Enable BigQuery API
+Create a Service Account
+Download the JSON key
+
+Set environment variable:
+```bash
+export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/service_account.json"
+```
+### 4. Run data ingestion
+```bash
+cd ingestion
+
+python fetch_flight.py
+python fetch_weather.py
+python load_to_bigquery.py
+```
+
+### 5. Run dbt models
+
+```bash
+cd ../dbt_projects
+dbt deps
+dbt run
+dbt test
+```
+### 6. Explore data
+
+Query final table:
+
+```sql
+SELECT *
+FROM `your_project.flight_data.fact_flights_weather`
+LIMIT 10;
+```
+
+### 7. Open Dashboard
+
+flight_data.fact_flights_weather

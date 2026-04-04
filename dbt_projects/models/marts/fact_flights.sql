@@ -21,11 +21,14 @@ SELECT
     AVG(arrival_delay_minutes) AS avg_arrival_delay_minutes,
     SUM(CASE WHEN cancelled THEN 1 ELSE 0 END) AS total_cancelled_flights,
     SUM(CASE WHEN diverted THEN 1 ELSE 0 END) AS total_diverted_flights,
+    SAFE_DIVIDE(
+      SUM(CASE WHEN cancelled THEN 1 ELSE 0 END),
+      COUNT(*)
+    ) AS cancellation_rate,
     AVG(distance) AS avg_distance,
     AVG(air_time) AS avg_air_time,
     AVG(taxi_out) AS avg_taxi_out,
     AVG(taxi_in) AS avg_taxi_in
-
 FROM {{ ref('stg_flights') }}
 GROUP BY
     flight_date,
