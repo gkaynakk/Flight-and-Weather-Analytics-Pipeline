@@ -61,13 +61,23 @@ The project follows a modern data engineering architecture:
 Data Source → Python Ingestion → Parquet → BigQuery → dbt → Dashboard
 ```   
 
+## ☁️ Infrastructure (Terraform)
+
+BigQuery dataset is provisioned using Terraform:
+
+```bash
+cd terraform
+terraform init
+terraform apply
+```
+
 ## 📊 Dashboard
 
 This project includes an interactive dashboard built with Looker Studio to analyze the impact of weather conditions on flight performance.
 
-```markdown
+
 🔗 [View Dashboard](https://lookerstudio.google.com/s/uLRcgOfG6ag)
-```
+
 ![Dashboard](images/DashboardZoomcamp.png)
 
 ### Key Insights
@@ -79,6 +89,11 @@ This project includes an interactive dashboard built with Looker Studio to analy
 ## ⚙️ How to Run
 
 This project is fully reproducible. Follow the steps below to run the pipeline end-to-end.
+
+```markdown
+> **Authentication note:** Local execution uses Google ADC authentication.  
+> For CI/CD execution in GitHub Actions, a service account-based setup would be required.
+```
 
 ### 1. Clone the repository
 
@@ -92,15 +107,16 @@ cd Flight-and-Weather-Analytics-Pipeline
 pip install -r requirements.txt
 ```
 ### 3. Set up Google Cloud
-Create a GCP project
-Enable BigQuery API
-Create a Service Account
-Download the JSON key
 
-Set environment variable:
+Create a GCP project  
+Enable BigQuery API  
+
+For local development, authentication is done using:
+
 ```bash
-export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/service_account.json"
+gcloud auth application-default login
 ```
+
 ### 4. Run data ingestion
 ```bash
 cd ingestion
@@ -130,4 +146,28 @@ LIMIT 10;
 
 ### 7. Open Dashboard
 
-flight_data.fact_flights_weather
+Open the Looker Studio dashboard using the link above.
+
+## ⏱️ Orchestration
+
+The pipeline was designed to be automated using GitHub Actions. It runs ingestion and transformation steps on schedule or manually.
+
+Workflow file:
+.github/workflows/pipeline.yml
+
+The workflow includes the following steps:
+
+- Process raw flight data  
+- Process raw weather data  
+- Load processed data into BigQuery  
+- Run dbt transformations  
+- Run dbt tests  
+
+Note
+
+During development, the pipeline was executed locally using Google Application Default Credentials (ADC) via:
+
+gcloud auth application-default login
+
+Because GitHub Actions requires non-interactive authentication, a service account or Workload Identity Federation would be needed for full cloud execution in CI/CD. This can be added as a future improvement.
+
